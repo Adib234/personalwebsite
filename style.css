@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.name {
+    width: 80%;
+    margin-left: 20px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+header {
+    min-height: 60px;
+    height: 80px;
+}
+
+.name h1 {
+    width: 200px;
+    margin: 0;
+}
+
+.name {
+    height: 50px;
+    width: 200px;
+
+}
+
+
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.section {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 30px 160px auto;
+    border-bottom: 2px red solid;
+}
+
+.me {
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.blurb {
+    border-radius: 10px;
+    grid-row: 3/4;
+    grid-column: 2/4;
+    margin-left: 60px;
+    border: 2px black solid;
+    padding: 0% 2.5%;
+    background-image: linear-gradient(white, aqua);
+}
+
+.intro {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    grid-column: 2/4;
+    height: 100px;
+}
+
+.name1 {
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+
+    display: inline-block;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    50% {
+        transform: rotate(70deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.main {
+    padding: 0px;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+.main li {
+
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 600;
+    display: inline;
+    font-size: 32px;
+    border-right: 1px red solid;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links li {
+
+    display: inline;
+    padding: 10px;
+}
+
+.skillsbar {
+    display: flex;
+
+}
+
+.skills-1 {
+
+    margin-left: 30px;
+    width: 50%;
+}
+
+.skills-2 {
+
+    margin-right: 30px;
+    width: 50%;
+}
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.heading {
+    font-size: 32px;
+    margin-left: 610px;
+}
+
+.bar {
+    background-color: rgb(207, 152, 152);
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.bar.a::before {
+    background-color: rgba(161, 43, 43, 0.5)
+}
+
+.bar.b::before {
+    background-color: #a6cfe3;
+}
+
+.bar.c::before {
+    background-color: #ffcc33;
+}
+
+.bar.d::before {
+    background-color: #6dff33;
+}
+
+.bar.e::before {
+    background-color: #12dfce;
+}
+
+.bar.f::before {
+    background-color: #ff33c2;
+}
+
+.bar.a1::before {
+    width: calc(80% - 10px);
+}
+
+.bar.b1::before {
+    width: calc(75% - 10px);
+}
+
+.bar.c1::before {
+    width: calc(90% - 10px);
+}
+
+.bar.d1::before {
+    width: calc(85% - 10px);
+}
+
+.bar.e1::before {
+    width: calc(75% - 10px);
+}
+
+.bar.f1::before {
+    width: calc(70% - 10px);
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.bottom {
+    display: block;
+    font-weight: 600;
+}
